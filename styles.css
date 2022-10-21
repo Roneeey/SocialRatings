@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+:root {
+  /*  Primary Colors */
+  --very-dark-magenta: hsl(300, 43%, 22%);
+  --soft-pink: hsl(333, 80%, 67%);
+
+  /*  Nuetral Colors */
+  --dark-grayish-magenta: hsl(303, 10%, 53%);
+  --light-grayish-magenta: hsl(300, 24%, 96%);
+  --white: hsl(0, 0%, 100%);
+}
+
+/* Page container settings */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 1150px;
+  height: 700px;
+}
+
+.star-margin {
+  margin-right: 10px;
+}
+
+body {
+  font-family: 'League Spartan', serif;
+  font-size: 15px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 50px;
+  color: var(--very-dark-magenta);
+  margin-bottom: 25px;
+}
+
+/* Top half of the page (text on left and ratings on right) */
+
+.upper-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 35%;
+  margin-bottom: 45px;
+}
+
+.text {
+  max-width: 30%;
+  align-self: flex-start;
+}
+
+.text p {
+  line-height: 23px;
+  color: var(--dark-grayish-magenta);
+}
+
+.ratings-wrapper {
+  min-width: 44%;
+  display: flex;
+  flex-direction: column;
+
+  height: 80%;
+}
+
+.ratings-bar {
+  display: flex;
+  align-items: center;
+  width: 420px;
+  background-color: var(--light-grayish-magenta);
+  border-radius: 5px;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+}
+
+.ratings-bar p {
+  color: var(--very-dark-magenta);
+  font-weight: 700;
+  margin-left: 30px;
+}
+
+.two {
+  align-self: center;
+}
+
+.three {
+  align-self: flex-end;
+}
+
+/* Bottom half of the content. Three feedback cards */
+
+.lower-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 45%;
+}
+
+.card {
+  max-width: 350px;
+  height: 275px;
+  background-color: var(--very-dark-magenta);
+  border-radius: 5px;
+  padding: 50px 45px;
+}
+
+.card img {
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+  margin-right: 25px;
+}
+
+.profile-section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.name {
+  color: var(--white);
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.feedback-text {
+  color: var(--white);
+  font-weight: 400;
+  line-height: 23px;
+}
+
+.name-status {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-status {
+  color: var(--soft-pink);
+  font-weight: 400;
+}
+
+.card2 {
+  align-self: center;
+}
+
+.card3 {
+  align-self: flex-end;
+}
+
+/* MOBILE STYLES 375PX */
+
+@media only screen and (max-width: 375px) {
+  body {
+    display: block;
+    height: 100%;
+    max-width: 375px;
+    margin: auto;
+  }
+  .container {
+    display: block;
+    height: 100%;
+    margin-top: 75px;
+    text-align: center;
+    max-width: 375px;
+  }
+
+  .ratings-bar {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 275px;
+  }
+
+  .text {
+    max-width: 100%;
+    margin-bottom: 35px;
+  }
+
+  .upper-wrapper {
+    display: block;
+  }
+
+  .ratings-wrapper {
+    display: block;
+  }
+
+  .lower-wrapper {
+    display: block;
+  }
+}
