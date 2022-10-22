@@ -173,9 +173,14 @@ h1 {
   }
 
   .ratings-bar {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 275px;
+    display: block;
+    max-width: 100%;
+    justify-content: center;
+  }
+
+  .ratings-bar p {
+    margin-left: 0px;
+    margin-top: 10px;
   }
 
   .text {
@@ -189,9 +194,17 @@ h1 {
 
   .ratings-wrapper {
     display: block;
+    width: 350px;
+    margin: auto;
   }
 
   .lower-wrapper {
     display: block;
+    width: 350px;
+    margin: auto;
+  }
+
+  .card {
+    margin-bottom: 15px;
   }
 }
